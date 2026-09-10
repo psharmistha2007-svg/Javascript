@@ -31,3 +31,20 @@ console.log(typeof myFunction); // function
 console.log(typeof scoreValue); // number
 console.log(typeof null); // object
 console.log(typeof anotherId); // symbol
+
+// Stack(Primitives) and Heap(Non-Primitives) Memory Allocation in JavaScript
+
+let myYoutubeChannel = "Codevolution"; // Stack Memory
+let anotherChannel = myYoutubeChannel; // Stack Memory
+anotherChannel = "Codevolution2"; // Stack Memory
+console.log(myYoutubeChannel); // Codevolution
+console.log(anotherChannel); // Codevolution
+
+let user = {
+    Email: "user@google.com", // Heap Memory
+    upi: "user@ybl", // Heap Memory
+}
+let admin = user; // Heap Memory
+admin.Email = "admin@google.com"; // Modifying the object through the admin reference
+console.log(user.Email); // admin@google.com
+console.log(admin.Email); 
