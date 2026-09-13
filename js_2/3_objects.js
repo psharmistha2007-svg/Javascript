@@ -17,6 +17,7 @@ console.log(user);
 user.greeting = function() { //adding a new method to the user object
     console.log("Hi user"); //using the this keyword to access the Name property of the user object
 }
+console.log(user.greeting);
 console.log(user.greeting()); //calling the greeting method of the user object 
 
 user.greeting2 = function() {
