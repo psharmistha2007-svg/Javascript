@@ -17,5 +17,6 @@ console.log(Array.from({Name: "Sharmistha"})); //create an array from an object
 
 let score = 200
 let score2 = 400
-let score3 = 600
+let score3 = 
+
 console.log(Array.of(score, score2, score3)); //create an array from individual values
